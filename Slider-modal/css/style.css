@@ -1,0 +1,434 @@
+/* Общие стили */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body{
+  position: relative;
+  height: 100%;
+}
+
+body{
+  background: url(../img/bg/bg-pattern.png);
+}
+
+.title__text span{
+  display: block;
+  font-weight: 700;
+}
+
+.title__text{
+  margin-top: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+/* Стили по слайдерам */
+.swiper {
+  width: 100%;
+  height: 50%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.swiper-button-prev, 
+.swiper-button-next{
+  width: 40px;
+  height: 40px;
+}
+
+.swiper-button-prev{
+  background: url(../img/btn/btn-prev.png);
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next{
+  background: url(../img/btn/btn-next.png);
+  background-repeat: no-repeat;
+}
+
+.swiper-button-next::after, 
+.swiper-button-prev:after, 
+.swiper-rtl{
+  display: none;
+}
+
+.swiper-pagination{
+  color: #C8C8C8;
+}
+
+/* Стили по секциям */
+/* Секция Info */
+.info{
+  background: url(../img/bg/bg-info.png);
+  width: 1600px;
+  height: 552px;
+}
+
+.info__text{
+  position: relative;
+  top: 50px;
+}
+
+.swiper-1{
+  width: 80%;
+  height: 75%;
+}
+
+.swiper-slide-1{
+  /* background: #fff; */
+  position: relative;
+  top: 50px;
+}
+
+.swiper-slide-1 p{
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  /* white-space: nowrap; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #1D2936;
+}
+
+.swiper-slide-1 img{
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev-1{
+  position: relative;
+  bottom: 265px;
+  left: -155px;
+}
+
+.next-1{
+  position: relative;
+  bottom: 245px;
+  left: 1230px;
+}
+
+/* Секция Catalog */
+.cat__text{
+  background: linear-gradient(128.46deg, #EBEDEE 0%, #F4F4F6 100%);
+  width: 285px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #1D2936;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  justify-content: center;
+}
+
+.catalog__text{
+  color: #012D5C;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.catalog-group{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  grid-template-areas:
+  "a b c d"
+  "a b c d"
+  "a b c d"
+  "a b c";
+  align-items: start;
+  padding-top: 100px;
+}
+
+.catalog-group img{
+  margin-left: 10px;
+}
+
+.catalog-cart-1, 
+.catalog-cart-5, 
+.catalog-cart-9, 
+.catalog-cart-13{
+  grid-area: a;
+}
+
+.catalog-cart-2, 
+.catalog-cart-6, 
+.catalog-cart-10,
+.catalog-cart-14{
+  grid-area: b;
+}
+
+.catalog-cart-3, 
+.catalog-cart-7, 
+.catalog-cart-11,
+.catalog-cart-15{
+  grid-area: c;
+}
+
+.catalog-cart-4, 
+.catalog-cart-8, 
+.catalog-cart-12{
+  grid-area: d;
+}
+
+.catalog-group{
+  display: flex;
+  position: relative;
+  left: 5%;
+}
+
+.catalog-group-1{
+  bottom: 100px;
+}
+
+.catalog-group-2{
+  bottom: 205px;
+}
+
+.catalog-group-3{
+  bottom: 310px;
+}
+
+.catalog-group-4{
+  bottom: 415px;
+  left: 15%;
+}
+
+/* Секция Docs */
+.docs{
+  background: url(../img/bg/bg-docs.png);
+  width: 1600px;
+  height: 633px;
+  position: relative;
+  bottom: 400px;
+}
+
+.docs__text{
+  position: relative;
+  top: 50px;
+  right: 125px;
+}
+
+.swiper-2{
+  width: 80%;
+  position: relative;
+  bottom: 850px;
+}
+
+.swiper-slide-2 img{
+  width: 183px;
+  height: 260px;
+  margin-left: 10px;
+}
+
+.prev-2{
+  position: relative;
+  bottom: 1025px;
+  left: -55px;
+}
+
+.next-2{
+  position: relative;
+  bottom: 1005px;
+  left: 1130px;
+}
+
+/* Секция Reviews*/
+.reviews{
+  position: relative;
+  bottom: 700px;
+}
+
+.reviews__text{
+  color: #012D5C;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.swiper-3{
+  width: 80%;
+  position: relative;
+  bottom: 700px;
+}
+ 
+.swiper-slide-3 img{
+  width: 183px;
+  height: 260px;
+}
+
+.prev-3{
+  position: relative;
+  bottom: 875px;
+  left: 65px;
+}
+
+.next-3{
+  position: relative;
+  bottom: 855px;
+  left: 1245px;
+}
+
+/* Секция Cons*/
+.cons{
+  background: url(../img/bg/bg-cons.png);
+  width: 1600px;
+  height: 614px;
+  position: relative;
+  bottom: 700px;
+}
+
+.cons__text{
+  position: relative;
+  top: 50px;
+  right: 140px;
+}
+
+.swiper-4{
+  position: relative;
+  bottom: 1200px;
+  width: 80%;
+}
+
+.swiper-slide-4{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 100px;
+  grid-template-areas:
+  "a b c d e f"
+  "a b c d e f";
+  align-items: start;
+  padding-top: 100px;
+}
+
+.swiper-slide-4 img{
+  width: 183px;
+  height: 90px;
+  border-radius: 8px;
+}
+
+.item-1,
+.item-7,
+.item-13{
+  grid-area: a;
+}
+
+.item-2,
+.item-8,
+.item-14{
+  grid-area: b;
+}
+
+.item-3,
+.item-9,
+.item-15{
+  grid-area: c;
+}
+
+.item-4,
+.item-10,
+.item-16{
+  grid-area: d;
+}
+
+.item-5,
+.item-11,
+.item-17{
+  grid-area: e;
+}
+
+.item-6,
+.item-12,
+.item-18{
+  grid-area: f;
+}
+
+.prev-4{
+  position: relative;
+  bottom: 1325px;
+  left: -55px;
+}
+
+.next-4{
+  position: relative;
+  bottom: 1305px;
+  left: 1130px;
+}
+
+.swiper-slide-4 img:nth-child(2){
+  margin-top: 20px;
+}
+
+/* кружки */
+/* .swiper-pagination-fraction{bottom:50px;left:0;width:100%} */
+
+.swiper-pagination-1{
+  /* position: relative;
+  top: 250px; */
+}
+
+/* Последние правки в стилях:
+    1) Для всех слайдеров перепроверить ширину и высоту, чтобы они были по макету;
+    2) В slider-bundle.min.css найти класс .swiper-pagination-fraction, в нём менять отступ
+    сверху для кружков, там же нужно поменять высоту для них;
+    3) Интегрировать код по слайдеру в section и container;
+    4) Выровнять текст в 1-м слайдере.
+*/
+
+/*  Важно: 
+    1) Попробовать увеличить высоту блока со слайдером swiper-1, может так получится сдвинуть
+    кружки вниз, так, как в макете;
+    2) Кружки лежат в классе swiper-pagination, который является потомком класса swiper-1,
+    может стоит вызвать их, как дочерний класс?
+*/
+
