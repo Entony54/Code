@@ -1,0 +1,356 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="Адаптивный слайдер карусель, содержит эффект горизонтального пролистывая, с плавным появлением и исчезновением слайдов. Прост в установке и настройке, не требует дополнительных плагинов.">
+<meta name=viewport content="width=device-width, initial-scale=1"> 
+
+<link rel="stylesheet" href="css/slider1.css">
+<link rel="stylesheet" href="css/slider2.css">
+<link rel="stylesheet" href="css/slider3.css">
+<link rel="stylesheet" href="css/slider4.css">
+<link rel="stylesheet" href="css/modal.css">
+
+<title>Адаптивный слайдер карусель, с плавным эффектом автопрокрутки HTML5 + CSS3 + jQuery</title>
+</head>
+<body>
+
+<div id="slider-wrap">
+    <div id="active-slide">
+        <div id="slider">
+            <div class="slide">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+            </div>
+            <div class="slide">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+                <img src="img/bridge.svg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="slider-wrap2">
+    <div id="active-slide2">
+        <div id="slider2">
+            <div class="slide2">
+                <a href="#" class="js-open-modal" data-modal="1"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="2"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="3"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="4"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="5"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="6"><img src="img/doc.png" alt=""></a>
+            </div>
+            <div class="slide2">
+                <a href="#" class="js-open-modal" data-modal="7"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="8"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="9"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="10"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="11"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="12"><img src="img/doc.png" alt=""></a>
+            </div>
+            <div class="slide2">
+                <a href="#" class="js-open-modal" data-modal="13"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="14"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="15"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="16"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="17"><img src="img/doc.png" alt=""></a>
+                <a href="#" class="js-open-modal" data-modal="18"><img src="img/doc.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="1">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="2">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="3">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="4">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="5">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="6">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="7">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="8">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="9">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="10">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="11">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="12">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="13">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="14">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="15">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="16">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="17">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="18">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/doc.png" alt="">
+</div>
+
+<div id="slider-wrap3">
+    <div id="active-slide3">
+        <div id="slider3">
+            <div class="slide3">
+                <a href="#" class="js-open-modal" data-modal="19"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="20"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="21"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="22"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="23"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="24"><img src="img/review-doc.png"></a>
+            </div>
+            <div class="slide3">
+                <a href="#" class="js-open-modal" data-modal="25"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="26"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="27"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="28"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="29"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="30"><img src="img/review-doc.png"></a>
+            </div>
+            <div class="slide3">
+                <a href="#" class="js-open-modal" data-modal="31"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="32"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="33"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="34"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="35"><img src="img/review-doc.png"></a>
+                <a href="#" class="js-open-modal" data-modal="36"><img src="img/review-doc.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="19">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="20">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="21">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="22">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="23">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="24">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="25">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="26">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="27">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="28">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="29">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="30">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="31">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="32">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="33">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="34">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="35">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div class="modal" data-modal="36">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <img src="img/review-doc.png" alt="">
+</div>
+
+<div id="slider-wrap4">
+    <div id="active-slide4">
+        <div id="slider4">
+            <div class="slide4">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+            </div>
+            <div class="slide4">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+            </div>
+            <div class="slide4">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+            </div>
+            <div class="slide4">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+            </div>
+            <div class="slide4">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+            </div>
+            <div class="slide4">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+            </div>
+            <div class="slide4">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+                <img src="img/cons-cart.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slider1.js"></script>
+    <script src="js/slider2.js"></script>
+    <script src="js/slider3.js"></script>
+    <script src="js/slider4.js"></script>
+    <script src="js/modal.js"></script>
+</div>
+
+</body>
+</html>

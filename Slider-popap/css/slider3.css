@@ -1,0 +1,103 @@
+#slider-wrap3{ 
+    max-width:800px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+
+#active-slide3 {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#slider3{
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 50px;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.slide3{
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide3 img {
+    width: 100px;
+    height: 100px;
+}
+
+.Radio-But3{
+    margin-top:10px;
+    text-align:center;
+}
+
+.Radio-But3 .ctrl-select3 {
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url("../img/radioBg.png") center bottom no-repeat;
+    background: #C8C8C8;
+    border-radius: 50%;
+}
+
+.Radio-But3 .ctrl-select3:hover {
+    cursor:pointer;
+    background-position:center center;
+    background-color: #F41C31;
+}
+
+.Radio-But3 .ctrl-select3.active {
+    background-position:center top;
+}
+
+#prewbutton3, #nextbutton3 {
+    display:block;
+    width:15px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    opacity:0.5;
+    z-index:3;
+    outline:none !important;
+}
+
+#prewbutton3 {
+    width: 50px;
+    left:10px;
+    top: 25px;
+    background: url("../img/Btn_Prev.png") no-repeat;
+}
+
+#nextbutton3 {
+    width: 50px;
+    right:10px;
+    top: 25px;
+    background: url("../img/Btn_Next.png") no-repeat;
+}
+
+#prewbutton3:hover, #nextbutton3:hover {
+    opacity:1;
+}
